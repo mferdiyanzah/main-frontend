@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font-poppins: "Poppins", sans-serif;
+$font-tienne: "Tienne", serif;
+$font-urbanist: "Urbanist", sans-serif;
+
+$blue-primary: #1b2131;
+$blue-variant2: rgba(27, 33, 49, 0.87);
+$blue-variant3: rgba(27, 33, 49, 0.68);
+$blue-variant4: rgba(27, 33, 49, 0.38);
+$blue-variant5: rgba(27, 33, 49, 0.08);
+
+$green-primary: #2c8857;
+$green-variant2: rgba(44, 136, 87, 0.87);
+$green-variant3: rgba(44, 136, 87, 0.68);
+$green-variant4: rgba(44, 136, 87, 0.38);
+$green-variant5: rgba(44, 136, 87, 0.08);
+
+$white-primary: rgba(255, 255, 255, 0.87);
+$white-variant2: rgba(255, 255, 255, 0.68);
+$white-variant3: rgba(255, 255, 255, 0.38);
+$white-transparent: rgba(255, 255, 255, 0.04);
+
+body {
+  background: #1b2131;
+  color: $white-primary;
+}
+
+.h-full {
+  min-height: calc(100vh - 69px);
+}
+
+h1,
+.h1 {
+  @include heading1();
+}
+
+h2,
+.h2 {
+  @include heading2();
+}
+
+h3,
+.h3 {
+  @include heading3();
+}
+
+h4,
+.h4 {
+  @include heading4();
+}
+
+h5,
+.h5 {
+  @include heading5();
+}
+
+h6,
+.h6 {
+  @include heading6();
+}
+
+.h7 {
+  @include heading7();
+}
+
+.body {
+  @include body();
+}
+
+p,
+.body2 {
+  @include body2();
+}
+
+.body3 {
+  @include body3();
+}
+
+.body4 {
+  @include body4();
+}
+
+.body5 {
+  @include body5();
+}

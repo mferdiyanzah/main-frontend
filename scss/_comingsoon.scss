@@ -1,0 +1,62 @@
+#comingsoon {
+  min-height: 100vh;
+  position: relative;
+  .comingsoon-title {
+    @include heading2();
+    @media screen and (max-width: 768px) {
+      margin-top: 100px;
+      @include heading4();
+    }
+  }
+  .comingsoon-desc {
+    width: 425px;
+    max-width: 100%;
+    margin: 1.5rem 0;
+    @include body2();
+    @media screen and (max-width: 768px) {
+      @include body3();
+    }
+  }
+  .timer-container {
+    margin-top: 2.5rem;
+    #days-number,
+    #hours-number,
+    #mins-number,
+    #secs-number {
+      font: 2.75rem/3.75rem $font-tienne;
+      letter-spacing: 0.08em;
+      color: $white-primary;
+      @media screen and (max-width: 768px) {
+        font: 1.75rem/3.125rem $font-tienne;
+      }
+    }
+    .timer-separator {
+      font: 2.5rem/3.75rem $font-tienne;
+      letter-spacing: 0.08em;
+      color: $white-primary;
+      @media screen and (max-width: 768px) {
+        font: 1.5rem/2.75rem $font-tienne;
+      }
+    }
+    .timer-name {
+      font: 300 1rem/2rem $font-urbanist;
+      color: rgba(255, 255, 255, 0.68);
+      @media screen and (max-width: 768px) {
+        font: 300 0.875rem/1.625rem $font-urbanist;
+      }
+    }
+  }
+  .comingsoon-image {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 700px;
+    max-width: 100%;
+    padding-left: 50px;
+    @media screen and (max-width: 768px) {
+      right: -75px;
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.navbar.navbar-dark {
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-nav {
+    .nav-link {
+      @include body4();
+      padding: 0;
+      margin: auto 1.25rem;
+      padding: 0.5rem 0;
+      color: $white-primary;
+      &.active {
+        color: $green-primary;
+      }
+      &.sign-in {
+        @include outline-button();
+        padding: 0.5rem 2.5rem;
+      }
+    }
+  }
+}
